@@ -37,6 +37,7 @@ public class Calculator implements ActionListener {
             The order was chosen to resemble an
             actual calculator
         */
+        /*
         // Creates button 7
         JButton button7 = new JButton("7");
         panelButtons.add(button7);
@@ -118,7 +119,80 @@ public class Calculator implements ActionListener {
         JButton button10 = new JButton("+");
         panelButtons.add(button10);
         button10.addActionListener(this);
+        */
         
+        // Creates buttons 1 through 3
+        JButton button1 = new JButton("1");
+        JButton button2 = new JButton("2");
+        JButton button3 = new JButton("3");
+        
+        // Creates buttons 4 through 6
+        JButton button4 = new JButton("4");
+        JButton button5 = new JButton("5");
+        JButton button6 = new JButton("6");
+        
+        // Creates buttons 7 through 9
+        JButton button7 = new JButton("7");
+        JButton button8 = new JButton("8");
+        JButton button9 = new JButton("9");
+        
+        // Creates button 0
+        JButton button0 = new JButton("0");
+        
+        // Creates all the additional buttons
+        // Creates addition button
+        JButton button10 = new JButton("+");
+        // Creates subtraction button
+        JButton button11 = new JButton("-");
+        // Creates division button
+        JButton button12 = new JButton("/");
+        // Creates multiplication button
+        JButton button13 = new JButton("*");        
+        //Creates equal button
+        JButton button14 = new JButton("=");
+        // Creates clear button 
+        JButton button15 = new JButton("C");
+        
+        // Adds all the buttons in the correct order
+        panelButtons.add(button7);
+        panelButtons.add(button8);
+        panelButtons.add(button9);
+        panelButtons.add(button12);
+        panelButtons.add(button4);
+        panelButtons.add(button5);
+        panelButtons.add(button6);
+        panelButtons.add(button13);
+        panelButtons.add(button1);
+        panelButtons.add(button2);
+        panelButtons.add(button3);
+        panelButtons.add(button11);
+        panelButtons.add(button15);
+        panelButtons.add(button0);
+        panelButtons.add(button14);
+        panelButtons.add(button10);
+        
+        // Add all the action listners
+        button0.addActionListener(this);
+        button1.addActionListener(this);
+        button2.addActionListener(this);
+        button3.addActionListener(this);
+        button4.addActionListener(this);
+        button5.addActionListener(this);
+        button6.addActionListener(this);
+        button7.addActionListener(this);
+        button8.addActionListener(this);
+        button9.addActionListener(this);
+        button10.addActionListener(this);
+        button11.addActionListener(this);
+        button12.addActionListener(this);
+        button13.addActionListener(this);
+        button14.addActionListener(this);
+        button15.addActionListener(this);
+        
+        //Add features to buttons
+        button0.setPreferredSize(new Dimension(40,40));
+        button15.setPreferredSize(new Dimension(40,80));
+             
         gui.add(panelButtons, BorderLayout.CENTER);
         frame.pack();
         frame.setVisible(true);
